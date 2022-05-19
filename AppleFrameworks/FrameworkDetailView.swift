@@ -7,15 +7,23 @@
 
 import SwiftUI
 
-struct detailFrameworkView: View {
+struct FrameworkDetailView: View {
     
     var framework: Framework
+    @Binding var isShowingDetailView: Bool
     
     var body: some View {
         VStack{
             HStack{
                 Spacer()
-                XButton()
+                Button{
+                    isShowingDetailView = false
+                } label : {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 44, height: 44)
+                }
             }
             Spacer()
             frameworkTitleView(framework: framework)
@@ -35,7 +43,7 @@ struct detailFrameworkView: View {
 
 struct detailFrameworkView_Previews: PreviewProvider {
     static var previews: some View {
-        detailFrameworkView(framework: MockData.frameworks[7])
+        FrameworkDetailView(framework: MockData.frameworks[7], isShowingDetailView: .constant(false))
             .preferredColorScheme(.dark)
     }
 }
