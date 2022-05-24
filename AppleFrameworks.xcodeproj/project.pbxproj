@@ -65,17 +65,15 @@
 		808128A228344E6500E3C4B5 /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80F0E57E283D621800712E49 /* Model */,
+				80F0E57C283D61B300712E49 /* UIKit Controllers */,
+				80F0E57D283D61EC00712E49 /* Views */,
+				80F0E578283D615200712E49 /* Screens */,
 				808128A328344E6500E3C4B5 /* AppleFrameworksApp.swift */,
 				808128A728344E6600E3C4B5 /* Assets.xcassets */,
 				808128A928344E6600E3C4B5 /* Preview Content */,
 				808128B128344E9500E3C4B5 /* Framework.swift */,
-				808128B32834503A00E3C4B5 /* FrameworkGridView.swift */,
 				80F4DB782836EF360027FE04 /* frameworkTitleView.swift */,
-				80F4DB7A2836EF740027FE04 /* FrameworkDetailView.swift */,
-				80F4DB7C2836F2EB0027FE04 /* AFButton.swift */,
-				80F4DB7E2836F4520027FE04 /* XButton.swift */,
-				80F4DB802836F5B70027FE04 /* FrameworkGridViewModel.swift */,
-				80F0E576283D5B5600712E49 /* SafariView.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
@@ -86,6 +84,64 @@
 				808128AA28344E6600E3C4B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80F0E578283D615200712E49 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				80F0E57B283D619800712E49 /* Buttons */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		80F0E579283D615A00712E49 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				808128B32834503A00E3C4B5 /* FrameworkGridView.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		80F0E57A283D617A00712E49 /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				80F4DB7A2836EF740027FE04 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		80F0E57B283D619800712E49 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				80F4DB7C2836F2EB0027FE04 /* AFButton.swift */,
+				80F4DB7E2836F4520027FE04 /* XButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		80F0E57C283D61B300712E49 /* UIKit Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80F0E576283D5B5600712E49 /* SafariView.swift */,
+			);
+			path = "UIKit Controllers";
+			sourceTree = "<group>";
+		};
+		80F0E57D283D61EC00712E49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80F0E579283D615A00712E49 /* FrameworkGridView */,
+				80F0E57A283D617A00712E49 /* FrameworkDetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80F0E57E283D621800712E49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80F4DB802836F5B70027FE04 /* FrameworkGridViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

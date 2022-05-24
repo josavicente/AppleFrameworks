@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct XButton: View {
+    
+    @Binding var isShowingDetailView : Bool
+    
     var body: some View {
         Button{
             
@@ -20,8 +23,8 @@ struct XButton: View {
     }
 }
 
-struct XButton_Previews: PreviewProvider {
-    static var previews: some View {
-        XButton()
-    }
-}
+//struct XButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        XButton()
+//    }
+//}

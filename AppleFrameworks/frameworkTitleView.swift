@@ -24,3 +24,4 @@ struct frameworkTitleView: View {
         }.padding()
     }
 }
+

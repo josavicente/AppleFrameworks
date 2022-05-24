@@ -16,14 +16,15 @@ struct FrameworkDetailView: View {
         VStack{
             HStack{
                 Spacer()
-                Button{
-                    isShowingDetailView = false
-                } label : {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
+                XButton(isShowingDetailView: $isShowingDetailView)
+//                Button{
+//                    isShowingDetailView = false
+//                } label : {
+//                    Image(systemName: "xmark")
+//                        .foregroundColor(Color(.label))
+//                        .imageScale(.large)
+//                        .frame(width: 44, height: 44)
+//                }
             }
             Spacer()
             frameworkTitleView(framework: framework)
