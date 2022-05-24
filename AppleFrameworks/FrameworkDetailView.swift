@@ -36,8 +36,11 @@ struct FrameworkDetailView: View {
             } label: {
                 AFButton(title: "Learn More")
             }
+            //            .fullScreenCover(isPresented: $isShowingSafariView, content: {
+            //                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+            //            })
             .sheet(isPresented: $isShowingSafariView, content: {
-                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
             })
         }.padding()
     }
