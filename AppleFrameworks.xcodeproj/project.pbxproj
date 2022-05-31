@@ -12,6 +12,7 @@
 		808128AB28344E6600E3C4B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808128AA28344E6600E3C4B5 /* Preview Assets.xcassets */; };
 		808128B228344E9500E3C4B5 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808128B128344E9500E3C4B5 /* Framework.swift */; };
 		808128B42834503A00E3C4B5 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808128B32834503A00E3C4B5 /* FrameworkGridView.swift */; };
+		808C80A12846A065009B55EA /* FrameworkDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C80A02846A065009B55EA /* FrameworkDetailModel.swift */; };
 		80F0E577283D5B5600712E49 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0E576283D5B5600712E49 /* SafariView.swift */; };
 		80F4DB792836EF360027FE04 /* frameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F4DB782836EF360027FE04 /* frameworkTitleView.swift */; };
 		80F4DB7B2836EF740027FE04 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F4DB7A2836EF740027FE04 /* FrameworkDetailView.swift */; };
@@ -27,6 +28,7 @@
 		808128AA28344E6600E3C4B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		808128B128344E9500E3C4B5 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		808128B32834503A00E3C4B5 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		808C80A02846A065009B55EA /* FrameworkDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailModel.swift; sourceTree = "<group>"; };
 		80F0E576283D5B5600712E49 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		80F4DB782836EF360027FE04 /* frameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkTitleView.swift; sourceTree = "<group>"; };
 		80F4DB7A2836EF740027FE04 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				80F4DB7A2836EF740027FE04 /* FrameworkDetailView.swift */,
+				808C80A02846A065009B55EA /* FrameworkDetailModel.swift */,
 			);
 			path = FrameworkDetailView;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				80F4DB7D2836F2EB0027FE04 /* AFButton.swift in Sources */,
 				808128A428344E6500E3C4B5 /* AppleFrameworksApp.swift in Sources */,
 				80F4DB812836F5B70027FE04 /* FrameworkGridViewModel.swift in Sources */,
+				808C80A12846A065009B55EA /* FrameworkDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

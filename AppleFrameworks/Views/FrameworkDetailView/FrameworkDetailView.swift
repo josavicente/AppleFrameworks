@@ -9,14 +9,13 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    var framework: Framework
-    @Binding var isShowingDetailView: Bool
-    @State private var isShowingSafariView = false
+    @ObservedObject var viewModel: FrameworkDetailModel
+    
     var body: some View {
         VStack{
             HStack{
                 Spacer()
-                XButton(isShowingDetailView: $isShowingDetailView)
+                XButton(isShowingDetailView: $viewModel.isShowingDetailView.wrappedValue)
 //                Button{
 //                    isShowingDetailView = false
 //                } label : {
@@ -27,35 +26,39 @@ struct FrameworkDetailView: View {
 //                }
             }
             Spacer()
-            frameworkTitleView(framework: framework)
-            Text(framework.description)
+            frameworkTitleView(framework: viewModel.framework)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             Spacer()
-            Button {
-                isShowingSafariView = true
-            } label: {
-                Label("Learn more", systemImage: "book.fill")
-                // AFButton(title: "Learn More")
-            }.buttonStyle(.bordered)
-                .controlSize(.large)
-                .buttonBorderShape(.capsule)
-                .tint(.red)
-            //            .fullScreenCover(isPresented: $isShowingSafariView, content: {
-            //                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
-            //            })
-            .sheet(isPresented: $isShowingSafariView, content: {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
-            })
+            
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!) {
+                AFButton(title: "Learn More")
+            }
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                Label("Learn more", systemImage: "book.fill")
+//                AFButton(title: "Learn More")
+//            }.buttonStyle(.bordered)
+//                .controlSize(.large)
+//                .buttonBorderShape(.capsule)
+//                .tint(.red)
+//            //            .fullScreenCover(isPresented: $isShowingSafariView, content: {
+//            //                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+//            //            })
+//                .sheet(isPresented: $viewModel.isShowingSafariView, content: {
+//                SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!)
+//            })
         }.padding()
     }
 }
 
-struct detailFrameworkView_Previews: PreviewProvider {
-    static var previews: some View {
-        FrameworkDetailView(framework: MockData.frameworks[7], isShowingDetailView: .constant(false))
-            .preferredColorScheme(.dark)
-    }
-}
+//struct detailFrameworkView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FrameworkDetailView(framework: MockData.frameworks[7], isShowingDetailView: .constant(false))
+//            .preferredColorScheme(.dark)
+//    }
+//}
 
 
